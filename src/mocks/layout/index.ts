@@ -1,0 +1,1 @@
+export { MenuIconsMock } from './menu';

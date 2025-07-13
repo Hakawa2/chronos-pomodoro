@@ -1,0 +1,15 @@
+.logo {
+  gap: 2.4rem;
+}
+
+.logoLink {
+  gap: 0.5rem;
+  font-size: 4.2rem;
+  font-weight: bold;
+  color: var(--primary);
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    filter: brightness(50%);
+  }
+}

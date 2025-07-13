@@ -1,0 +1,19 @@
+.menu {
+  gap: 1.4rem;
+}
+
+.menuLink {
+  display: inline-flex;
+  gap: 0.5rem;
+  font-size: 4.2rem;
+  font-weight: bold;
+  background-color: var(--primary);
+  color: var(--text-over-primary);
+  transition: all 0.1s ease-in-out;
+  padding: 1rem;
+  border-radius: 0.8rem;
+
+  &:hover {
+    filter: brightness(50%);
+  }
+}
