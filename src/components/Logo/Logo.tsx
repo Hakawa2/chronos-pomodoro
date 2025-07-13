@@ -7,7 +7,7 @@ export function Logo() {
     <div className={`${styles.logo} d-flex center`}>
       <a className={`${styles.logoLink} d-flex center column`} href='#'>
         <TimerIcon size={64} />
-        <span>Chronos</span>
+        <h1>Chronos</h1>
       </a>
     </div>
   );
