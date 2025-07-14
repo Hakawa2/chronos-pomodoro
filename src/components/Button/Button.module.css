@@ -1,0 +1,23 @@
+.button {
+  border: none;
+
+  min-width: 24rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  transition: all 0.1s ease-in-out;
+
+  &.start {
+    background-color: var(--primary);
+    color: var(--text-over-primary);
+  }
+
+  &.pause {
+    background-color: var(--error);
+    color: var(--text-over-error);
+  }
+
+  &:hover {
+    filter: brightness(80%);
+  }
+}

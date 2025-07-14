@@ -1,4 +1,11 @@
-import { HistoryIcon, HouseIcon, SettingsIcon, SunIcon } from 'lucide-react';
+import {
+  HistoryIcon,
+  HouseIcon,
+  PlayCircleIcon,
+  SettingsIcon,
+  SunIcon,
+  type LucideIcon,
+} from 'lucide-react';
 import { IconConstants } from '../../constants';
 import type { IconValue } from '../../types';
 
@@ -7,13 +14,16 @@ type IconProps = {
   iconSize?: number;
 };
 
-export function Icon({ iconName, iconSize = 32 }: IconProps) {
-  const listIcons: Record<IconValue, React.ReactElement> = {
-    [IconConstants.House]: <HouseIcon size={iconSize} />,
-    [IconConstants.History]: <HistoryIcon size={iconSize} />,
-    [IconConstants.Settings]: <SettingsIcon size={iconSize} />,
-    [IconConstants.Sun]: <SunIcon size={iconSize} />,
+export function Icon({ iconName, iconSize = 24 }: IconProps) {
+  const iconMap: { [k in IconValue]: LucideIcon } = {
+    [IconConstants.House]: HouseIcon,
+    [IconConstants.History]: HistoryIcon,
+    [IconConstants.Settings]: SettingsIcon,
+    [IconConstants.Sun]: SunIcon,
+    [IconConstants.Play]: PlayCircleIcon,
   };
 
-  return listIcons[iconName];
+  const IconComponent = iconMap[iconName];
+
+  return <IconComponent size={iconSize} />;
 }

@@ -3,4 +3,5 @@ export const IconConstants = {
   Settings: 'settings',
   Sun: 'sun',
   House: 'house',
-};
+  Play: 'play',
+} as const;

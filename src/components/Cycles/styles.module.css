@@ -1,0 +1,24 @@
+.cycles {
+}
+
+.cyclesDots {
+  gap: 0.8rem;
+}
+
+.cycleDot {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+
+  &.workTime {
+    background-color: var(--warning);
+  }
+
+  &.shortBreakTime {
+    background-color: var(--primary);
+  }
+
+  &.longBreakTime {
+    background-color: var(--info);
+  }
+}
