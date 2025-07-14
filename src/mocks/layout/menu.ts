@@ -17,9 +17,4 @@ export const MenuIconsMock: MenuItems[] = [
     ariaLabel: 'Ir para as configurações',
     link: '#',
   },
-  {
-    icon: IconConstants.Sun,
-    ariaLabel: 'Trocar de tema',
-    link: '#',
-  },
 ];
