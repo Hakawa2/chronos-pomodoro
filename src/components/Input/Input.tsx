@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import styles from './Input.module.css';
 
 type InputProps = {
   id: string;

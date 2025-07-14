@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import styles from './Cycles.module.css';
 
 export function Cycles() {
   return (
