@@ -12,6 +12,7 @@
   transition: all 0.1s ease-in-out;
   padding: 1rem;
   border-radius: 0.8rem;
+  border: none;
 
   &:hover {
     filter: brightness(50%);

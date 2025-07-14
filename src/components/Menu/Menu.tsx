@@ -1,15 +1,17 @@
 import type { MenuProps } from '../../types';
 import { Icon } from '../Icon';
+import { ThemeButton } from '../ThemeButton';
 import styles from './Menu.module.css';
 
-export function Menu({ itemList }: MenuProps) {
+export function Menu({ items }: MenuProps) {
   return (
     <nav className={`${styles.menu} d-flex center`}>
-      {itemList.map(item => (
+      {items.map(item => (
         <a className={`${styles.menuLink}`} href={item.link} key={item.icon}>
           <Icon iconName={item.icon} />
         </a>
       ))}
+      <ThemeButton className={styles.menuLink} />
     </nav>
   );
 }

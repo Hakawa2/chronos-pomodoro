@@ -1,8 +1,11 @@
+import type { IconValue } from './icon.types';
+
 export type MenuProps = {
-  itemList: MenuItems[];
+  items: MenuItems[];
 };
 
 export type MenuItems = {
-  icon: string;
+  icon: IconValue;
   link: string;
+  ariaLabel: string;
 };

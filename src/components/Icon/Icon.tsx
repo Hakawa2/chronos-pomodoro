@@ -1,6 +1,7 @@
 import {
   HistoryIcon,
   HouseIcon,
+  MoonIcon,
   PlayCircleIcon,
   SettingsIcon,
   SunIcon,
@@ -21,6 +22,7 @@ export function Icon({ iconName, iconSize = 24 }: IconProps) {
     [IconConstants.Settings]: SettingsIcon,
     [IconConstants.Sun]: SunIcon,
     [IconConstants.Play]: PlayCircleIcon,
+    [IconConstants.Moon]: MoonIcon,
   };
 
   const IconComponent = iconMap[iconName];

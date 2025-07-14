@@ -4,4 +4,5 @@ export const IconConstants = {
   Sun: 'sun',
   House: 'house',
   Play: 'play',
+  Moon: 'moon',
 } as const;

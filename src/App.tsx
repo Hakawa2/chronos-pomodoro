@@ -13,7 +13,7 @@ export function App() {
         <Logo />
       </Container>
       <Container>
-        <Menu itemList={MenuIconsMock} />
+        <Menu items={MenuIconsMock} />
       </Container>
       <Container>
         <CountDown />
