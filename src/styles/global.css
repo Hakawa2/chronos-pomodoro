@@ -21,6 +21,15 @@ a {
   text-decoration: none;
 }
 
+.link {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .d-flex {
   display: flex;
 
